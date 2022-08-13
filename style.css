@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: #E5E5E5;
     padding-top: 92px;
@@ -43,7 +47,9 @@ body{
 }
 .caixa-rolagem{
     width: 100%;
-    height: 216px;
+    height: 240px;
+    display: flex;
+    overflow-x: scroll;
 }
 .prato{
     width: 172px;
@@ -52,8 +58,9 @@ body{
     border-radius: 9px;
     background-color: #FFFFFF;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    margin-right: 16px;
+    flex-shrink: 1;
 }
 .prato > p{
     font-family: "Roboto", sans-serif;
@@ -68,6 +75,7 @@ body{
     font-size: 16px;
     line-height: 19px;
     color: #333333;
+    text-align: left;
 }
 .prato :nth-child(3){
     font-size: 15px;
