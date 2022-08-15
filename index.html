@@ -25,16 +25,14 @@
             Primeiro, seu prato
         </p>
         <div class="caixa-rolagem">
-            <div class="prato">
+            <div class="prato prato1" onclick="selecionarPrato()">
                 <img src="img/prato1.jpg">
-                <div class="titulo-prato">Frango assado</div>
-                <p>Frango assado na brasa</p>
+                <p class="titulo-prato">Frango assado</p>
+                <p class="descricao-prato">Frango assado na brasa</p>
                 <p class="preco-prato">R$ 14,90</p>
+                <ion-icon class="check-item escondido" name="checkmark-circle"></ion-icon>
             </div>
-            <button class="botao-prato" onclick="selecionarPrato()">
-                Teste do botão
-            </button>
-            <div class="prato">
+            <div class="prato prato2" onclick="selecionado(this)">
                 <img src="img/prato2.jpg">
                 <p>Linguiça na brasa</p>
                 <p>Linguiça toscana assada na brasa</p>
@@ -145,5 +143,6 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>
 </html>
