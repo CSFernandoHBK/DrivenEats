@@ -13,6 +13,3 @@ function selecionarPrato(elemento){
     const check = document.querySelector(".check-item")
     check.classList.toggle("escondido")
 }
-function checkitem(check){
-    check.classList.toggle("escondido")
-}
